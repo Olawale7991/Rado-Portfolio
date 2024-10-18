@@ -145,6 +145,10 @@
         gap: 15px;
         align-items: center;
     }
+    .about-skills {
+        width: 300px; 
+        max-width: 100%; 
+    }
 
     .about-skill p {
         font-size: 18px;
