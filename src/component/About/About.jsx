@@ -14,10 +14,11 @@ const About = () => {
         <div className='about-section'>
             
             <div className='about-right'>
-                <div className='about-para'>
-                    <p>I am a passionate web developer specializing in the MERN stack. With hands-on experience building e-commerce platforms and solving complex backend challenges and , I focus on creating user-friendly, scalable solutions</p>
-                    <p> I thrive in dynamic environments and am always eager to learn new technologies and contribute to impactful projects. My goal is to leverage my skills to help businesses grow through innovative web development</p>
-                </div>
+                <marquee className='about-para' behavior="" direction="left" >
+                <p>I am a passionate web developer specializing in the MERN stack. With hands-on experience building e-commerce platforms and solving complex backend challenges and , I focus on creating user-friendly, scalable solutions</p>
+                <p> I thrive in dynamic environments and am always eager to learn new technologies and contribute to impactful projects. My goal is to leverage my skills to help businesses grow through innovative web development</p>
+                </marquee>
+                
                 <div className='about-skills'>
                     <div className='about-skill'><p>HTML & CSS</p><hr style={{width: '75%'}}/></div>
                     <div className='about-skill'><p>React JS</p><hr style={{width: '60%'}}/></div>

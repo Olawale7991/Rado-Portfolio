@@ -2,6 +2,8 @@ import React from 'react'
 import './Hero.css'
 import copy from '../../assets/copy.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import cv from '../../assets/mern.pdf'
+
 
 
 
@@ -13,7 +15,10 @@ const Hero = () => {
     <p>I'm MERN-Stack Developer from Lagos, Nigeria.</p>
     <div className='hero-action'>
        <AnchorLink className='anchor-link' offset={50} href='#contact'> <div className='hero-connect'>Connect With Me</div></AnchorLink>
-        <div className='hero-resume'>My Resume</div>
+       <a className="hero-resume" href={cv} target="_blank" rel="noopener noreferrer">
+  My Resume
+</a>
+
     </div>
     </div>
   )

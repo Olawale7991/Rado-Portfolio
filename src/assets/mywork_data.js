@@ -9,6 +9,7 @@ import time from '../assets/time.jpg'
 import book from '../assets/book.jpg'
 import iphone from '../assets/iphone.png'
 
+
 const mywork_data = [
     {
         w_no:1,

@@ -55,6 +55,24 @@
     display: none;
 }
 
+.ola{
+    position: relative;
+
+}
+
+.ola h3{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ola img{
+    position: absolute;
+    width: 5rem;
+    bottom: 0;
+    right: -20px;
+    z-index: -1;
+
+}
+
 
 @media(max-width: 768px) {
     .navbar{

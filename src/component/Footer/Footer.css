@@ -1,5 +1,5 @@
 .footer{
-    margin: 50px 170px;
+    margin: 50px 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -8,6 +8,7 @@
 .footer-top{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-top-left{
@@ -17,6 +18,9 @@
 
 .footer-top-left img{
     width: 10rem;
+}
+.footer-top-left p{
+   font-size: 15px;
 }
 .footer-top-right{
     display: flex;
@@ -61,10 +65,11 @@
     transition: 0.3s;
 }
 
-.footer-botom{
+.footer-bottom{
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 16px;
+    
 }
 .footer-bottom-right{
     display: flex;
@@ -72,17 +77,76 @@
     margin-bottom: 50px;
 }
 
-@media (max-width:768px){
-    .footer{
-        margin: 50px 70px;
+.olas{
+    position: relative;
+
+}
+
+.olas h3{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.olas img{
+    position: absolute;
+    width: 5rem;
+    bottom: 0;
+    right: 250px;
+    z-index: -1;
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 20px; 
+        padding: 20px; 
     }
-    .footer-top{
+
+    .footer-top {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    .footer-top-right{
         flex-direction: column;
-        gap: 50px;
+        gap: 10px; 
     }
-    .footer-bottom{
+
+    .footer-bottom {
         display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 50px;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 20px; 
+    }
+
+    .footer-top h1,
+    .footer-top p,
+    .footer-bottom p {
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+
+    .footer img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    .footer-bottom-left{
+        text-align: center;
+    }
+    .footer-bottom-right{
+        text-align: center;
+        
+    }
+
+    .olas img{
+        position: absolute;
+        width: 5rem;
+        bottom: 0;
+        right: 170px;
+        z-index: -1;
+    
+    }
+
+    .olas{
+        margin-bottom: 10px;
     }
 }

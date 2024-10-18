@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import rado from '../../assets/Rado.jpg'
+import underline from '../../assets/nav_underline.svg'
 import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
@@ -8,7 +8,10 @@ const Footer = () => {
     <div className='footer'>
         <div className='footer-top'>
             <div className='footer-top-left'>
-                <img src={rado} alt="" />
+        <div className='olas'>
+            <h3>Olawale </h3>
+            <img src={underline} alt="" />
+        </div>
                 <p>I am a full-stack developer specializing in the MERN stack. My goal is to leverage my skills to help businesses grow through innovative web development </p>
             </div>
             <div className='footer-top-right'>

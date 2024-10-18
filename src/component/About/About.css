@@ -31,36 +31,35 @@
 .about-right {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 .about-para {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .about-skills{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 .about-skill{
     display: flex;
     gap: 50px;
     align-items: center;
     transition: 0.3s;
-}
-.about-skill{
-    min-width: 150px;
-    font-size: 24px;
+    min-width: 80px;
+    font-size: 16px;
     font-weight: 500;
 }
+
 .about-skill hr{
     outline: none;
     border: none;
-    width: 50%;
+    width: 40%;
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(267deg, #da7c25, 0.36%, #B923E1 702.06%);
@@ -111,52 +110,65 @@
     transition: 0.3s;
 }
 
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
+@media (max-width: 768px) {
+    .about {
+        gap: 30px; 
+        margin: 20px 20px; 
+        align-items: flex-start;
     }
-    .about-title h1{
-        font-size: 50px;
+
+    .about-title h1 {
+        font-size: 36px;
         padding: 0;
     }
-    .about-title img{
-        width: 140px;
-        right: -15px;
+
+    .about-title img {
+        width: 100px; 
+        max-width: 100%; 
+        right: -10px;
     }
-    .about-section{
+
+    .about-section {
         flex-direction: column;
     }
-    .about-left{
+
+    .about-left {
         display: none;
     }
-    .about-para{
-        font-size: 20px;
-        line-height: 35px;
+
+    .about-para {
+        font-size: 18px; 
+        line-height: 28px; 
     }
-    .about-skill{
-        gap: 20px;
+
+    .about-skill {
+        gap: 15px;
         align-items: center;
     }
-    .about-skill p{
-        font-size: 20px;
+
+    .about-skill p {
+        font-size: 18px;
     }
-    .about-skill hr{
-        height: 6px ;
+
+    .about-skill hr {
+        height: 6px;
     }
-    .about-achievements{
-       justify-content: space-between;
+
+    .about-achievements {
+        justify-content: space-between;
     }
-    .about-achievement{
-       gap: 10px;
+
+    .about-achievement {
+        gap: 10px;
     }
-    .about-achievement h1{
-       font-size: 34px;
-       font-weight: 700;
+
+    .about-achievement h1 {
+        font-size: 28px; 
+        font-weight: 700;
     }
-    .about-achievement p{
-       text-align: center;
-       font-size: 16px;
+
+    .about-achievement p {
+        text-align: center;
+        font-size: 14px;
     }
 }
