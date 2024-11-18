@@ -18,7 +18,9 @@ const MyWork = () => {
                 mywork_data.map((item, index) => (
                     // Wrap the image in an anchor tag
                     <a key={index} href={item.w_url} target="_blank" rel="noopener noreferrer">
+                       <div>
                         <img src={item.w_img} alt={item.w_name} />
+                       </div>
                     </a>
                 ))
             }
