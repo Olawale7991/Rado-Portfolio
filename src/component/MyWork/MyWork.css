@@ -50,7 +50,6 @@
     width: 170px;
 }
 
-/* Card Container */
 .mywork-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
