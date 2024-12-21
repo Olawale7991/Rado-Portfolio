@@ -1,14 +1,27 @@
-import React from "react";
-import { motion } from "framer-motion"; 
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion"; 
+import { useInView } from "react-intersection-observer";
 import "./About.css";
 import photoshoot2 from "../../assets/photoshoot5.jpg";
 import theme_pattern from "../../assets/theme_pattern.svg";
 
 const About = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   // Animation Variants
   const fadeIn = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   const staggerContainer = {
@@ -24,15 +37,16 @@ const About = () => {
 
   const scaleIn = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
   };
 
   return (
     <motion.div
+      ref={ref} 
       id="about"
       className="about"
       initial="hidden"
-      animate="visible"
+      animate={controls} 
       variants={staggerContainer}
     >
       {/* About Title */}
@@ -62,7 +76,7 @@ const About = () => {
 
           {/* Skills Section */}
           <motion.div className="about-skills" variants={fadeIn}>
-            {[
+            {[ 
               { skill: "HTML & CSS", width: "75%" },
               { skill: "React JS", width: "60%" },
               { skill: "Javascript", width: "50%" },

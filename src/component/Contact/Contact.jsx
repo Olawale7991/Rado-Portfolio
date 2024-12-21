@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import { useForm, ValidationError } from "@formspree/react";
-import { motion } from "framer-motion"; 
+import { motion, useInView } from "framer-motion";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xyzygjdw");
@@ -13,9 +13,12 @@ const Contact = () => {
     return alert("Thanks for joining");
   }
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const fadeIn = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
   };
 
   const staggerContainer = {
@@ -30,8 +33,9 @@ const Contact = () => {
     <motion.div
       id="contact"
       className="contact"
+      ref={ref}
       initial="hidden"
-      animate="visible"
+      animate={isInView ? "visible" : "hidden"}
       variants={staggerContainer}
     >
       {/* Title Section */}
@@ -54,9 +58,18 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="contact-details">
             {[
-              { icon: mail_icon, text: "olawaleridwan7991@gmail.com" },
-              { icon: location_icon, text: "Lagos, Nigeria" },
-              { icon: call_icon, text: "+234-70-6762-1077" },
+              {
+                icon: mail_icon,
+                text: "olawaleridwan7991@gmail.com",
+              },
+              {
+                icon: location_icon,
+                text: "Lagos, Nigeria",
+              },
+              {
+                icon: call_icon,
+                text: "+234-70-6762-1077",
+              },
             ].map((item, index) => (
               <motion.div
                 className="contact-detail"
