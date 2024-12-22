@@ -44,11 +44,11 @@ const MyWork = () => {
 
   return (
     <motion.div
-      ref={ref} // Attach ref to detect visibility
+      ref={ref} 
       id="work"
       className="mywork"
       initial="hidden"
-      animate={controls} // Trigger animation dynamically
+      animate={controls} 
       variants={containerVariants}
     >
       {/* Title Section */}

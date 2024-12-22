@@ -176,13 +176,15 @@
 
 @media (max-width: 480px) {
     .mywork-container {
+        width: 22rem !important;
+        padding-left: -20px;
         grid-template-columns: 1fr; 
     }
 
     .mywork {
         align-items: flex-start; 
         gap: 40px; 
-        margin: 20px; 
+        margin: 5px; 
     }
 
     .mywork-title h1 {
@@ -197,7 +199,8 @@
     }
 
     .card {
-        height: auto; /* Adjust height for smaller screens */
+        height: auto; 
+        width: 22rem !important;
     }
 }
 
