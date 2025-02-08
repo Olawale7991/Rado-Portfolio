@@ -10,13 +10,15 @@ import moremi from '../assets/moremi.jpg'
 
 const mywork_data = [
     
+    
     {
         w_no:1,
-        w_name:"Moremi Techstars",
-        w_img:moremi,
-        w_desc: 'Moremi is a platform that helps girls and women succeed in tech. The platform integrates a seamless frontend built with React and a secure backend powered by Node.js, Express, and MongoDB, ensuring an efficient and user-friendly experience for all stakeholders ',
-        w_url: "https://moremi-project.vercel.app/",
-        w_gt : "https://github.com/Olawale7991/moremi-project",
+        w_name:"Rado clothing store",
+        w_img:phat,
+        w_desc: "Rado Clothing Store is an e-commerce application that allows users to browse, select, and purchase clothing items. The project was built using the MERN stack, which includes MongoDB for the database, Express.js and Node.js for the backend and also added stripe as payment integration, and React for the frontend. The app also utilizes Tailwind for responsive design and React Context for state management, particularly for the shopping cart. Users can register, log in, and view products categorized by type, while admin features for product management are also included",
+        w_url: "https://rado-ecommerce-frontend.vercel.app/",
+        w_gt : "https://github.com/Olawale7991/project.git"
+        
     },
     
     {
@@ -28,14 +30,14 @@ const mywork_data = [
         w_gt : "https://github.com/Olawale7991/pelstick-project",
         
     },
+  
     {
         w_no:3,
-        w_name:"Rado clothing store",
-        w_img:phat,
-        w_desc: "Rado Clothing Store is an e-commerce application that allows users to browse, select, and purchase clothing items. The project was built using the MERN stack, which includes MongoDB for the database, Express.js and Node.js for the backend, and React for the frontend. The app also utilizes Tailwind for responsive design and React Context for state management, particularly for the shopping cart. Users can register, log in, and view products categorized by type, while admin features for product management are also included",
-        w_url: "https://project-urll.onrender.com",
-        w_gt : "https://github.com/Olawale7991/rado-store"
-        
+        w_name:"Moremi Techstars",
+        w_img:moremi,
+        w_desc: 'Moremi is a platform that helps girls and women succeed in tech. The platform integrates a seamless frontend built with React and a secure backend powered by Node.js, Express, and MongoDB, ensuring an efficient and user-friendly experience for all stakeholders ',
+        w_url: "https://moremi-project.vercel.app/",
+        w_gt : "https://github.com/Olawale7991/moremi-project",
     },
     {
         w_no:4,
